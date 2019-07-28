@@ -2,16 +2,17 @@
 
 import React, { PropTypes} from 'react'
 import moment from 'moment'
+import style from './user-info.css'
 
 const UserInfo = ({ userinfo }) => (
-    <div className='user-info'>
+    <div className={style.userInfo}>
         <img src={userinfo.photo} />
         <h1 className='username'>
             <a href={`https://github.com/${userinfo.login}`}>
                 {userinfo.username}
             </a>
         </h1>
-        <div className='repos-info'>
+        <div className={style.reposInfo}>
             <ul>
                 <li>Repositórios: { userinfo.repos }</li>
                 <li>Seguidores: { userinfo.followers }</li>
