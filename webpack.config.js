@@ -27,7 +27,7 @@ module.exports = validate({
         new DashboardPlugin(),
         new HtmlPlugin({
             title: 'Github app',
-            template: path.join(__dirname, 'src', 'html', 'template.html')
+            template: path.join(__dirname, 'src', 'html', 'template-dev.html')
         })
     ],
     module: {
@@ -48,5 +48,11 @@ module.exports = validate({
             include: /src/,
             loaders: ['style', 'css?modules']
         }]
+    },
+    resolve: {
+        alias: {
+            src: path.join(__dirname, 'src'),
+            components: path.join(__dirname, 'src', 'components')
+        }
     }
 })

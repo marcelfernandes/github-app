@@ -1,11 +1,11 @@
 'use strict'
 
 import React, { PropTypes } from 'react'
-import Search from './search'
-import UserInfo from './user-info'
-import Actions from './actions'
-import Repos from './repos'
-import style from '../css/style.css'
+import Search from 'components/search'
+import UserInfo from 'components/user-info'
+import Actions from 'components/actions'
+import Repos from 'components/repos'
+import style from './app.css'
 
 const AppContent = ({ 
     userinfo, 
