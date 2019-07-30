@@ -141,7 +141,6 @@ test('pagination({ total: "abc", activePage: 1 }) should throw an error', () => 
   } catch (e) {
     expect(e.message).to.be.equal(result)
   }
-  
 })
 
 test('pagination({ total: 10, activePage: "1a" }) should throw an error', () => {
@@ -153,5 +152,4 @@ test('pagination({ total: 10, activePage: "1a" }) should throw an error', () => 
   } catch (e) {
     expect(e.message).to.be.equal(result)
   }
-  
 })
